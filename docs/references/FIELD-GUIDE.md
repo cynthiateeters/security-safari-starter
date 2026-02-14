@@ -34,6 +34,17 @@ Find **five planted vulnerabilities** in this codebase:
 4. An XSS vulnerability
 5. A code injection vulnerability
 
+```mermaid
+flowchart LR
+    subgraph Hunt
+        A[Dependencies] --> B[Secrets]
+        B --> C[Git history]
+        C --> D[XSS]
+        D --> E[Code injection]
+    end
+    E --> F[Create fixes]
+```
+
 Document each finding and create fixes.
 
 ## Hunt 1: dependency vulnerabilities
@@ -129,6 +140,14 @@ Or ask your AI spotter:
 
 **The prey:** Unsanitized user input rendered as HTML
 
+```mermaid
+flowchart LR
+    A[User types input] --> B[JavaScript reads it]
+    B --> C{How is it displayed?}
+    C -->|textContent| D[Safe ✅]
+    C -->|innerHTML| E[XSS risk ⚠️]
+```
+
 **How to track it:**
 
 ```bash
@@ -158,6 +177,13 @@ If an alert pops up, you've confirmed the XSS vulnerability.
 ## Hunt 5: code injection
 
 **The prey:** User input passed to `eval()` or similar functions
+
+```mermaid
+flowchart LR
+    A[User types input] --> B{How is it processed?}
+    B -->|eval| C[Runs as code ⚠️]
+    B -->|Safe parser| D[Treated as data ✅]
+```
 
 **How to track it:**
 

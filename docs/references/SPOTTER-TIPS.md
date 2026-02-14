@@ -13,6 +13,14 @@ But remember: **spotters can miss things**. You're still the one responsible for
 3. Verify everything the AI tells you
 4. Don't assume the AI found everything
 
+```mermaid
+flowchart LR
+    A[Ask AI] --> B[Get response]
+    B --> C{Verify it}
+    C -->|Confirmed| D[Document finding]
+    C -->|Not found| E[Search manually]
+```
+
 ### Prompts for common vulnerability hunts
 
 ## Dependency checks
@@ -62,6 +70,17 @@ Ask your AI spotter:
 > "List all files that were deleted from the repository. Any of these might still contain sensitive data in git history."
 
 ## When to trust vs verify
+
+```mermaid
+flowchart TD
+    A[AI gives answer] --> B{What type?}
+    B -->|Pattern search| C[Trust ✅]
+    B -->|Explanation| C
+    B -->|"Nothing found"| D[Verify ⚠️]
+    B -->|Recommended fix| D
+    B -->|CVE claim| D
+    B -->|Git history| D
+```
 
 ### Trust the spotter when
 

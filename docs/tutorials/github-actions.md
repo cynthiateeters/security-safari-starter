@@ -45,6 +45,14 @@ When you create a pull request, a workflow automatically runs and:
 5. Checks for hardcoded secrets
 6. Posts a comment on your PR with results
 
+```mermaid
+flowchart LR
+    A([PR Created]) --> B[Install deps]
+    B --> C[npm audit]
+    C --> D[Scan code]
+    D --> E[Post comment]
+```
+
 You'll see a comment like:
 
 ```
@@ -134,6 +142,16 @@ When you see the security scan comment:
 2. **Check which issues remain** — you might have missed something
 3. **Click the workflow link** — see detailed output for each check
 4. **Push more commits** — the workflow runs again automatically
+
+```mermaid
+flowchart TD
+    A[Read scan comment] --> B{All issues fixed?}
+    B -->|Yes| C[Merge PR]
+    B -->|No| D[Fix remaining issues]
+    D --> E[Push commits]
+    E --> F[Scan runs again]
+    F --> A
+```
 
 Each push to your PR branch triggers a new scan, so you can iterate until all checks pass.
 

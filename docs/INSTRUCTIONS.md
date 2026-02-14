@@ -43,6 +43,25 @@ After completing your hunt, submit:
    - Include quick start instructions
    - List the tech stack
    - Remove all "intentionally vulnerable" and training exercise language
+   - Add achievement badges for each fix you complete (see below)
    - See [tutorials/readme-best-practices.md](tutorials/readme-best-practices.md) for guidance
+
+## Achievement badges
+
+Add these badges to your README as you complete each fix:
+
+```markdown
+![Dependencies](https://img.shields.io/badge/✓_Dependencies-Fixed-228B22)
+![Secrets](https://img.shields.io/badge/✓_Secrets-Removed-228B22)
+![Git History](https://img.shields.io/badge/✓_Git_History-Cleaned-228B22)
+![XSS](https://img.shields.io/badge/✓_XSS-Patched-228B22)
+![Code Injection](<https://img.shields.io/badge/✓_eval()-Secured-228B22>)
+```
+
+When all five are fixed, add the trophy:
+
+```markdown
+![Big Five](https://img.shields.io/badge/🏆_Big_Five-Complete!-gold)
+```
 
 3. **Complete [REFLECTION.md](REFLECTION.md)** - Answer the three reflection questions about your experience

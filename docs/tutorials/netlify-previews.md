@@ -21,8 +21,13 @@ Use a unique site name: `security-safari-YOUR-USERNAME`
 4. **Reviewers click the link** to see your changes live
 5. **After merge**, your changes go to the main site
 
-```text
-Your PR ──► Netlify builds ──► Preview URL ──► Review ──► Merge ──► Production
+```mermaid
+flowchart LR
+    A[Your PR] --> B[Netlify builds]
+    B --> C[Preview URL]
+    C --> D[Review]
+    D --> E[Merge]
+    E --> F[Production]
 ```
 
 ---
@@ -101,6 +106,20 @@ Netlify integrates with GitHub through webhooks:
 2. Netlify clones your branch and runs `npm run build`
 3. Netlify deploys the built files to a unique URL
 4. Netlify posts the preview link as a PR comment
+
+```mermaid
+flowchart TD
+    subgraph GitHub
+        A[PR created/updated]
+    end
+    subgraph Netlify
+        B[Clone branch] --> C[npm run build]
+        C --> D[Deploy to preview URL]
+        D --> E[Post comment on PR]
+    end
+    A -->|webhook| B
+    E -->|link| A
+```
 
 This is called **continuous deployment** — every code change triggers an automatic build and deploy.
 

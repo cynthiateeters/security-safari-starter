@@ -30,6 +30,8 @@ Add these if relevant:
 ```markdown
 # Project Name
 
+![Badge](https://img.shields.io/badge/Status-Active-brightgreen)
+
 Brief description of what the app does.
 
 ## Quick start
@@ -68,3 +70,73 @@ MIT
 - Implementation details (put in code comments)
 - Changelog (use git history or CHANGELOG.md)
 - Lengthy tutorials (link to separate docs)
+
+---
+
+## Achievement badges
+
+Badges show project status at a glance. [Shields.io](https://shields.io/) generates them for free.
+
+### Where to place them
+
+Put badges at the **top of your README**, right after the title:
+
+```markdown
+# Project Name
+
+![Badge 1](url) ![Badge 2](url) ![Badge 3](url)
+
+Brief description...
+```
+
+Badges on the same line (no blank line between them) display inline.
+
+### Basic format
+
+```text
+https://img.shields.io/badge/LABEL-MESSAGE-COLOR
+```
+
+Replace spaces with underscores (`_`) in the URL.
+
+### Security Safari badges
+
+Add these to your README as you complete each fix:
+
+```markdown
+![Dependencies](https://img.shields.io/badge/✓_Dependencies-Fixed-228B22)
+![Secrets](https://img.shields.io/badge/✓_Secrets-Removed-228B22)
+![Git History](https://img.shields.io/badge/✓_Git_History-Cleaned-228B22)
+![XSS](https://img.shields.io/badge/✓_XSS-Patched-228B22)
+![Code Injection](<https://img.shields.io/badge/✓_eval()-Secured-228B22>)
+```
+
+When you've fixed all five:
+
+```markdown
+![Big Five](https://img.shields.io/badge/🏆_Big_Five-Complete!-gold)
+```
+
+### How they look
+
+![Dependencies](https://img.shields.io/badge/✓_Dependencies-Fixed-228B22)
+
+![Secrets](https://img.shields.io/badge/✓_Secrets-Removed-228B22)
+
+![Git History](https://img.shields.io/badge/✓_Git_History-Cleaned-228B22)
+
+![XSS](https://img.shields.io/badge/✓_XSS-Patched-228B22)
+
+![Code Injection](<https://img.shields.io/badge/✓_eval()-Secured-228B22>)
+
+![Big Five](https://img.shields.io/badge/🏆_Big_Five-Complete!-gold)
+
+### Custom badges
+
+Create your own with this pattern:
+
+```markdown
+![Label](https://img.shields.io/badge/LABEL-MESSAGE-COLOR)
+```
+
+Common colors: `brightgreen`, `green`, `yellow`, `orange`, `red`, `blue`, `gold`
