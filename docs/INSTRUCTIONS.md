@@ -28,6 +28,8 @@ Use the guides in the references folder:
 - [references/SPOTTER-TIPS.md](references/SPOTTER-TIPS.md) - How to use AI assistants for security auditing
 - [references/KNOW-YOUR-PREY.md](references/KNOW-YOUR-PREY.md) - Understanding AI blind spots
 
+Use [CHECKLIST.md](CHECKLIST.md) to track your progress through each vulnerability.
+
 ## Deliverables
 
 After completing your hunt, submit:
