@@ -9,16 +9,25 @@ When contributing to someone else's repository, you don't push directly to their
 ## The workflow at a glance
 
 ```mermaid
-flowchart LR
-    A[Fork repo] --> B[Clone locally]
-    B --> C[Create branch]
-    C --> D[Make changes]
-    D --> E[Commit]
-    E --> F[Push to fork]
-    F --> G[Open PR]
-    G --> H{Review}
-    H -->|Changes requested| D
-    H -->|Approved| I[Merge]
+flowchart TD
+    subgraph Setup
+        A[Fork repo] --> B[Clone locally]
+        B --> C[Create branch]
+    end
+
+    subgraph Development
+        D[Make changes] --> E[Commit]
+        E --> F[Push to fork]
+    end
+
+    subgraph Review
+        G[Open PR] --> H{Approved?}
+        H -->|Changes requested| D
+        H -->|Yes| I[Merge]
+    end
+
+    Setup --> Development
+    Development --> Review
 ```
 
 ---
