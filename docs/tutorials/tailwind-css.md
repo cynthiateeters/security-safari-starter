@@ -147,18 +147,21 @@ Tailwind is already configured. The key files:
 
 ```text
 project/
-├── vite.config.js        # Vite + Tailwind plugin
+├── postcss.config.js     # PostCSS plugins (Tailwind, Autoprefixer)
+├── tailwind.config.js    # Tailwind content paths and theme
 └── src/
-    └── style.css         # Imports Tailwind
+    └── styles.css        # Tailwind directives
 ```
 
-With Tailwind v4, the CSS file imports Tailwind like this:
+The CSS file imports Tailwind using directives:
 
 ```css
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 ```
 
-Vite processes this automatically — you just write classes in HTML.
+Vite processes this automatically via PostCSS — you just write classes in HTML.
 
 ---
 
