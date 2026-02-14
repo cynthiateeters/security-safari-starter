@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Poll</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        max-width: 600px;
+        margin: 2rem auto;
+        padding: 1rem;
+        background: hsl(210, 20%, 98%);
+        color: hsl(210, 10%, 20%);
+      }
+
+      h1 {
+        color: hsl(210, 50%, 40%);
+      }
+
+      form {
+        background: hsl(0, 0%, 100%);
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 2px 4px hsl(0, 0%, 0%, 0.1);
+      }
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid hsl(210, 20%, 80%);
+        border-radius: 4px;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      input[type="text"]:focus {
+        outline: 2px solid hsl(210, 80%, 50%);
+        outline-offset: 2px;
+      }
+
+      button {
+        background: hsl(210, 80%, 50%);
+        color: hsl(0, 0%, 100%);
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: hsl(210, 80%, 40%);
+      }
+
+      button:focus {
+        outline: 2px solid hsl(210, 80%, 50%);
+        outline-offset: 2px;
+      }
+
+      #output,
+      #calc-result {
+        padding: 1rem;
+        background: hsl(120, 30%, 95%);
+        border-radius: 4px;
+        min-height: 2rem;
+      }
+
+      .result-label {
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Quick Poll</h1>
+
+    <form id="poll-form">
+      <label for="response">What's your favorite programming language?</label>
+      <input
+        type="text"
+        id="response"
+        name="response"
+        placeholder="Type your answer..."
+        required
+      />
+      <button type="submit">Submit</button>
+    </form>
+
+    <p class="result-label">Your response:</p>
+    <div id="output"></div>
+
+    <h2>Quick Calculator</h2>
+
+    <form id="calc-form">
+      <label for="expression">Enter a math expression:</label>
+      <input
+        type="text"
+        id="expression"
+        name="expression"
+        placeholder="e.g., 2 + 2"
+        required
+      />
+      <button type="submit">Calculate</button>
+    </form>
+
+    <p class="result-label">Result:</p>
+    <div id="calc-result"></div>
+
+    <script type="module" src="/src/index.js"></script>
+  </body>
+</html>
