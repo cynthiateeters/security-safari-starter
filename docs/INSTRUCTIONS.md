@@ -1,5 +1,7 @@
 # Security Safari instructions
 
+![HAP the safari guide](https://res.cloudinary.com/cynthia-teeters/image/upload/f_auto,q_auto,w_200,c_limit/canvas/hap/hap-safari)
+
 ## Your mission
 
 Find the "Big Five" vulnerabilities hidden in this codebase:
