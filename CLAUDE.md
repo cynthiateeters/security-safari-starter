@@ -19,10 +19,12 @@ The following global rules are **intentionally violated** in this project:
 ```text
 security-safari-starter/
 ├── index.html              # Main app (styled with Tailwind)
+├── postcss.config.js       # PostCSS plugins
+├── tailwind.config.js      # Tailwind configuration
 ├── src/
 │   ├── index.js            # App logic (contains vulnerabilities)
 │   ├── config.js           # Config (contains hardcoded secret)
-│   └── styles.css          # Tailwind import
+│   └── styles.css          # Tailwind directives
 ├── docs/
 │   ├── INSTRUCTIONS.md     # Student mission and deliverables
 │   ├── CHECKLIST.md        # Progress tracker
@@ -40,7 +42,7 @@ security-safari-starter/
 ## Tech stack
 
 - Vite ~5.1.0 (intentionally old)
-- Tailwind CSS v4 with @tailwindcss/vite plugin
+- Tailwind CSS v3 with PostCSS
 - Vanilla JavaScript (no framework)
 
 ## Safe despite vulnerabilities

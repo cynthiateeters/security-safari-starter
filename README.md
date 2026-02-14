@@ -24,10 +24,12 @@ Optional background reading on the tools used in this project:
 - [docs/tutorials/intro-to-vite.md](docs/tutorials/intro-to-vite.md) - What Vite is and why we use it
 - [docs/tutorials/tailwind-css.md](docs/tutorials/tailwind-css.md) - How Tailwind utility classes work
 - [docs/tutorials/netlify-previews.md](docs/tutorials/netlify-previews.md) - How PR previews work
+- [docs/tutorials/github-actions.md](docs/tutorials/github-actions.md) - How automated security checks work
+- [docs/tutorials/yaml-toml-files.md](docs/tutorials/yaml-toml-files.md) - Reading YAML and TOML config files
 
 ## Safety note
 
-This project is intentionally vulnerable for educational purposes. All vulnerabilities are harmless and local-only. Do not deploy to production.
+This project is intentionally vulnerable for educational purposes. All vulnerabilities are harmless — see [docs/SAFETY.md](docs/SAFETY.md) for details.
 
 ## License
 
