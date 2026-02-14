@@ -19,13 +19,14 @@ npm run dev
 
 ## Tutorials
 
-Optional background reading on the tools used in this project:
+Need help? These tutorials explain the tools. You can also ask your AI assistant.
 
 - [docs/tutorials/git-workflow.md](docs/tutorials/git-workflow.md) - Branch and PR workflow
+- [docs/tutorials/github-actions.md](docs/tutorials/github-actions.md) - How automated security checks work
+- [docs/tutorials/netlify-previews.md](docs/tutorials/netlify-previews.md) - How deploy previews work on PRs
+- [docs/tutorials/readme-best-practices.md](docs/tutorials/readme-best-practices.md) - Writing a good README
 - [docs/tutorials/intro-to-vite.md](docs/tutorials/intro-to-vite.md) - What Vite is and why we use it
 - [docs/tutorials/tailwind-css.md](docs/tutorials/tailwind-css.md) - How Tailwind utility classes work
-- [docs/tutorials/netlify-previews.md](docs/tutorials/netlify-previews.md) - How PR previews work
-- [docs/tutorials/github-actions.md](docs/tutorials/github-actions.md) - How automated security checks work
 - [docs/tutorials/yaml-toml-files.md](docs/tutorials/yaml-toml-files.md) - Reading YAML and TOML config files
 
 ## Safety note

@@ -33,7 +33,8 @@ After completing your hunt, submit:
 1. **Five pull requests** - Create a separate branch and PR for each fix:
    - Use the `fix/` prefix (e.g., `fix/xss-vulnerability`)
    - Fill out the PR template to document the vulnerability and fix
-   - A security scan runs automatically on each PR
+   - A security scan runs automatically on each PR (see [tutorials/github-actions.md](tutorials/github-actions.md))
+   - Check the deploy preview to verify your fix works (see [tutorials/netlify-previews.md](tutorials/netlify-previews.md))
    - Merge each PR before starting the next fix
    - See [tutorials/git-workflow.md](tutorials/git-workflow.md) for the full workflow
 
@@ -42,5 +43,6 @@ After completing your hunt, submit:
    - Include quick start instructions
    - List the tech stack
    - Remove all "intentionally vulnerable" and training exercise language
+   - See [tutorials/readme-best-practices.md](tutorials/readme-best-practices.md) for guidance
 
 3. **Complete [REFLECTION.md](REFLECTION.md)** - Answer the three reflection questions about your experience
