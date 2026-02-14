@@ -64,4 +64,4 @@ This is a **teaching tool**, not a real application. The vulnerabilities exist f
 3. Vulnerabilities only affect the person who triggers them
 4. The site is static HTML/CSS/JS — no server-side code
 
-Students fork the repo, find the issues, fix them, and submit PRs. The deployed version demonstrates what "vulnerable" looks like so they can verify their fixes work.
+Students clone the repo, find the issues, fix them, and submit PRs. The deployed version demonstrates what "vulnerable" looks like so they can verify their fixes work.

@@ -1,8 +1,15 @@
 # Netlify deploy previews
 
-> **Optional reading.** This tutorial explains what happens when you submit a pull request. You don't need to understand Netlify to complete the assignment — just know that your PR gets a live preview automatically.
+When you create a pull request, Netlify builds and deploys a preview of your changes. This lets you see your fixes in action before merging.
 
-When you create a pull request, Netlify builds and deploys a preview of your changes. This lets reviewers see your fixes in action before merging.
+---
+
+## Before you start: Deploy to Netlify
+
+> [!IMPORTANT]
+> Deploy your site to Netlify **before** creating your first PR, or you won't get deploy previews.
+
+Use a unique site name: `security-safari-YOUR-USERNAME`
 
 ---
 

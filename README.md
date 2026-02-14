@@ -21,7 +21,7 @@ npm run dev
 
 Optional background reading on the tools used in this project:
 
-- [docs/tutorials/git-workflow.md](docs/tutorials/git-workflow.md) - Fork, branch, and PR workflow
+- [docs/tutorials/git-workflow.md](docs/tutorials/git-workflow.md) - Branch and PR workflow
 - [docs/tutorials/intro-to-vite.md](docs/tutorials/intro-to-vite.md) - What Vite is and why we use it
 - [docs/tutorials/tailwind-css.md](docs/tutorials/tailwind-css.md) - How Tailwind utility classes work
 - [docs/tutorials/netlify-previews.md](docs/tutorials/netlify-previews.md) - How PR previews work

@@ -7,9 +7,9 @@ Welcome to Security Safari. This guide walks you through hunting for vulnerabili
 ### Set up your environment
 
 ```bash
-# Clone the repository
-git clone <your-fork-url>
-cd security-safari-starter
+# Clone your repository (GitHub Classroom created it for you)
+git clone https://github.com/YOUR-USERNAME/security-safari-YOUR-USERNAME.git
+cd security-safari-YOUR-USERNAME
 
 # Install dependencies
 npm install
@@ -19,6 +19,10 @@ npm run dev
 ```
 
 The app should open in your browser. It's a simple poll application with a calculator feature.
+
+### Deploy to Netlify
+
+Before creating any PRs, deploy your site to Netlify. Use site name: `security-safari-YOUR-USERNAME`
 
 ### Your mission
 
@@ -215,11 +219,13 @@ Which fixes are most urgent and why
 
 After documenting your findings:
 
-1. Fork this repository
-2. Create a branch for your fixes
-3. Fix each vulnerability
-4. Add a `SECURITY.md` file explaining how to report vulnerabilities
-5. Add security rules to `.github/copilot-instructions.md` based on the vulnerabilities you found
-6. Submit a pull request with your fixes
+1. Create a branch for your first fix (e.g., `fix/xss-vulnerability`)
+2. Fix the vulnerability
+3. Open a pull request and merge it
+4. Repeat for each vulnerability (5 total PRs)
+5. Add security rules to `.github/copilot-instructions.md` based on what you learned
+6. Update the README to reflect that vulnerabilities are fixed
+
+See [tutorials/git-workflow.md](../tutorials/git-workflow.md) for the full workflow.
 
 Good hunting!
