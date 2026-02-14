@@ -10,6 +10,14 @@ Find the "Big Five" vulnerabilities hidden in this codebase:
 4. An XSS vulnerability
 5. A code injection vulnerability
 
+## Before you start
+
+1. Clone your repo and run `npm install`
+2. Deploy to Netlify with site name `security-safari-YOUR-USERNAME`
+
+> [!WARNING]
+> Deploy before creating PRs to get deploy previews you will need to see.
+
 ## How to hunt
 
 Use the guides in the references folder:
@@ -22,18 +30,17 @@ Use the guides in the references folder:
 
 After completing your hunt, submit:
 
-1. **Security audit report** - Document each vulnerability you found, including:
-   - What the vulnerability is
-   - Where you found it (file and line number)
-   - Why it's dangerous
-   - How to fix it
+1. **Five pull requests** - Create a separate branch and PR for each fix:
+   - Use the `fix/` prefix (e.g., `fix/xss-vulnerability`)
+   - Fill out the PR template to document the vulnerability and fix
+   - A security scan runs automatically on each PR
+   - Merge each PR before starting the next fix
+   - See [tutorials/git-workflow.md](tutorials/git-workflow.md) for the full workflow
 
-2. **Pull request with fixes** - Fork this repository and create a PR that:
-   - Fixes all five vulnerabilities
-   - Includes clear commit messages explaining each fix
-   - A security scan runs automatically and comments on your PR (see [tutorials/github-actions.md](tutorials/github-actions.md))
+2. **Rewrite README.md** - Transform the README as if this were a real project:
+   - Write a brief description of what the app does
+   - Include quick start instructions
+   - List the tech stack
+   - Remove all "intentionally vulnerable" and training exercise language
 
-3. **Update README.md** - Edit the README to reflect that vulnerabilities have been fixed:
-   - Remove or update the "intentionally vulnerable" language
-   - Update the Safety note section
-   - Keep docs in sync with code
+3. **Complete [REFLECTION.md](REFLECTION.md)** - Answer the three reflection questions about your experience

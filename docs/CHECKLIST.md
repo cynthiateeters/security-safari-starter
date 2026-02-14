@@ -7,40 +7,41 @@ Track your progress through the hunt.
 - [ ] Cloned the repository
 - [ ] Ran `npm install`
 - [ ] Ran `npm run dev` and verified the app works
+- [ ] Deployed to Netlify (site name: `security-safari-YOUR-USERNAME`)
 - [ ] Read through the docs in this folder
 
 ## The Big Five
 
+Each vulnerability gets its own branch and PR. Use the PR template to document each fix.
+
 - [ ] **Vulnerability 1:** Outdated dependency with CVE
   - [ ] Found it
-  - [ ] Documented in report
-  - [ ] Fixed in PR
+  - [ ] Branch: `fix/outdated-dependency`
+  - [ ] PR created (template filled out) and merged
 
 - [ ] **Vulnerability 2:** Hardcoded secret in source code
   - [ ] Found it
-  - [ ] Documented in report
-  - [ ] Fixed in PR
+  - [ ] Branch: `fix/hardcoded-secret`
+  - [ ] PR created (template filled out) and merged
 
 - [ ] **Vulnerability 3:** Secret in git history
   - [ ] Found it
-  - [ ] Documented in report
-  - [ ] Fixed in PR
+  - [ ] Branch: `fix/secret-in-history`
+  - [ ] PR created (template filled out) and merged
 
 - [ ] **Vulnerability 4:** XSS vulnerability
   - [ ] Found it
-  - [ ] Documented in report
-  - [ ] Fixed in PR
+  - [ ] Branch: `fix/xss-vulnerability`
+  - [ ] PR created (template filled out) and merged
 
 - [ ] **Vulnerability 5:** Code injection vulnerability
   - [ ] Found it
-  - [ ] Documented in report
-  - [ ] Fixed in PR
+  - [ ] Branch: `fix/eval-injection`
+  - [ ] PR created (template filled out) and merged
 
 ## Deliverables
 
-- [ ] Security audit report written
-- [ ] Repository forked
-- [ ] All fixes committed with clear messages
-- [ ] Pull request created
-- [ ] README.md updated (remove "intentionally vulnerable" language)
-- [ ] Final review completed
+- [ ] 5 pull requests created and merged (one per fix, template filled out)
+- [ ] README.md rewritten as a real project README
+- [ ] REFLECTION.md completed (3 questions answered)
+- [ ] Verified all PRs are merged
