@@ -7,7 +7,6 @@ Track your progress through the hunt.
 - [ ] Cloned the repository
 - [ ] Ran `npm install`
 - [ ] Ran `npm run dev` and verified the app works
-- [ ] Deployed to Netlify (site name: `security-safari-YOUR-USERNAME`)
 - [ ] Read through the docs in this folder
 
 ## The Big Five

@@ -33,9 +33,13 @@ security-safari-starter/
 │   │   ├── SPOTTER-TIPS.md
 │   │   └── KNOW-YOUR-PREY.md
 │   └── tutorials/          # Background reading (optional)
+│       ├── git-workflow.md
+│       ├── github-actions.md
 │       ├── intro-to-vite.md
+│       ├── mermaid-diagrams.md
+│       ├── readme-best-practices.md
 │       ├── tailwind-css.md
-│       └── netlify-previews.md
+│       └── yaml-toml-files.md
 └── reports/                # Planning docs (gitignored)
 ```
 

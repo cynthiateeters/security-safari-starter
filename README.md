@@ -23,7 +23,6 @@ Need help? These tutorials explain the tools. You can also ask your AI assistant
 
 - [docs/tutorials/git-workflow.md](docs/tutorials/git-workflow.md) - Branch and PR workflow
 - [docs/tutorials/github-actions.md](docs/tutorials/github-actions.md) - How automated security checks work
-- [docs/tutorials/netlify-previews.md](docs/tutorials/netlify-previews.md) - How deploy previews work on PRs
 - [docs/tutorials/mermaid-diagrams.md](docs/tutorials/mermaid-diagrams.md) - Creating flowcharts in Markdown
 - [docs/tutorials/readme-best-practices.md](docs/tutorials/readme-best-practices.md) - Writing a good README
 - [docs/tutorials/intro-to-vite.md](docs/tutorials/intro-to-vite.md) - What Vite is and why we use it

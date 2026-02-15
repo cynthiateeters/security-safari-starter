@@ -20,10 +20,6 @@ npm run dev
 
 The app should open in your browser. It's a simple poll application with a calculator feature.
 
-### Deploy to Netlify
-
-Before creating any PRs, deploy your site to Netlify. Use site name: `security-safari-YOUR-USERNAME`
-
 ### Your mission
 
 Find **five planted vulnerabilities** in this codebase:

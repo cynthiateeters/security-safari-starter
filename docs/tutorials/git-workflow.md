@@ -7,6 +7,28 @@ GitHub Classroom created this repository for you. You are the **admin and sole c
 
 ---
 
+## Terminal vs VS Code
+
+The examples in this guide use terminal commands. You can also do most git operations in VS Code's Source Control panel — the choice is yours.
+
+Use whichever you're comfortable with, unless you're asked to take a screenshot of a terminal command and its output.
+
+One thing to know if you use the terminal:
+
+> [!TIP]
+> **Stuck in a scrolling view?** Some git commands (`git diff`, `git log`, `git show`) open a pager to display long output.
+>
+> | Key       | Action                              |
+> | --------- | ----------------------------------- |
+> | `q`       | **Quit** — return to command prompt |
+> | `↑` / `↓` | Scroll up/down one line             |
+> | `Space`   | Scroll down one page                |
+> | `b`       | Scroll up one page                  |
+>
+> If you're stuck, just press `q`.
+
+---
+
 ## Why use branches and PRs in your own repo?
 
 You could commit everything straight to `main`. It would work. But this assignment is practice for contributing to open source projects, where you **can't** push to main — you must use branches and pull requests.
@@ -14,7 +36,7 @@ You could commit everything straight to `main`. It would work. But this assignme
 By using the branch → PR workflow now, you'll:
 
 - **Get comfortable with git branching** before it's required
-- **See deploy previews** of your changes before merging
+- **Test changes before merging** — verify fixes locally before committing
 - **Trigger automated security checks** that comment on your PR
 - **Build good habits** for professional development
 
@@ -44,15 +66,13 @@ flowchart TD
 
 ---
 
-## Step 0: Deploy to Netlify first
-
-Before creating any PRs, deploy your site to Netlify so you get deploy previews. Use site name: `security-safari-YOUR-USERNAME`
-
----
-
 ## Step 1: Clone your repo
 
 Download your repository to work on it locally.
+
+Do it using VS Code.
+
+Or, if you are interested, here's the way to do it in the terminal (a method you'll see in plenty of README's for open source software).
 
 ```bash
 # Clone your repo
@@ -192,8 +212,8 @@ flowchart LR
 
 After opening a PR:
 
-1. **Automated checks run** — security scan posts a comment, Netlify builds a preview
-2. **Review the results** — click the deploy preview link to see your changes live
+1. **Automated checks run** — security scan posts a comment on your PR
+2. **Review the results** — verify your fix works by testing locally with `npm run dev`
 3. **Fix any issues** — push more commits to the same branch, PR updates automatically
 4. **Merge** — when you're satisfied, click "Merge pull request"
 

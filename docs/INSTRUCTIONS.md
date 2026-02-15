@@ -15,10 +15,7 @@ Find the "Big Five" vulnerabilities hidden in this codebase:
 ## Before you start
 
 1. Clone your repo and run `npm install`
-2. Deploy to Netlify with site name `security-safari-YOUR-USERNAME`
-
-> [!WARNING]
-> Deploy before creating PRs to get deploy previews you will need to see.
+2. Run `npm run dev` and verify the app works in your browser
 
 ## How to hunt
 
@@ -38,7 +35,7 @@ After completing your hunt, submit:
    - Use the `fix/` prefix (e.g., `fix/xss-vulnerability`)
    - Fill out the PR template to document the vulnerability and fix
    - A security scan runs automatically on each PR (see [tutorials/github-actions.md](tutorials/github-actions.md))
-   - Check the deploy preview to verify your fix works (see [tutorials/netlify-previews.md](tutorials/netlify-previews.md))
+   - Test your fix locally with `npm run dev`
    - Merge each PR before starting the next fix
    - See [tutorials/git-workflow.md](tutorials/git-workflow.md) for the full workflow
 

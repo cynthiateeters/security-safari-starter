@@ -16,7 +16,7 @@ This project contains **intentional vulnerabilities** for teaching purposes. Thi
 
 ### Build-time vs runtime
 
-The Vite CVE is a **build-time vulnerability** in the development server. Once the site is built and deployed as static files, Vite isn't running. The production site is just HTML, CSS, and JavaScript served by Netlify.
+The Vite CVE is a **build-time vulnerability** in the development server. Once the site is built and deployed as static files, Vite isn't running. The production site is just HTML, CSS, and JavaScript — static files with no server-side code.
 
 ### Fake credentials
 
@@ -64,4 +64,4 @@ This is a **teaching tool**, not a real application. The vulnerabilities exist f
 3. Vulnerabilities only affect the person who triggers them
 4. The site is static HTML/CSS/JS — no server-side code
 
-Students clone the repo, find the issues, fix them, and submit PRs. The deployed version demonstrates what "vulnerable" looks like so they can verify their fixes work.
+Students clone the repo, find the issues, fix them locally, and submit PRs. Running `npm run dev` demonstrates what "vulnerable" looks like so they can verify their fixes work.

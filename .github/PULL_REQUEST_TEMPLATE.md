@@ -17,5 +17,4 @@
 ## Checklist
 
 - [ ] Tested the fix locally with `npm run dev`
-- [ ] Reviewed the deploy preview
 - [ ] Commit message clearly describes the security fix
